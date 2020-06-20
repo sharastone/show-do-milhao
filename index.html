@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Show do Milhão</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <img src="assets/logo.png" id="img" />
+    <main>
+        <div id="info">
+            <div class="intro">
+                <p class="intro-title">Bem-vindo(a) ao Show do Milhão!</p>
+
+                <p class="intro-text">
+                    Aqui você tem a oportunidade de levar 1 MILHÃO DE REAIS pra casa!
+                    <br /><br /> Mas para isso você precisa acertar cinco perguntas de conhecimento geral.
+                    <br /><br /> E como nós somos bonzinhos vamos te dar uma ajudinha, mas só uma vez.
+                    <br /><br /> Ao pedir ajuda você receberá uma dica de ouro sobre a resposta correta. Lembre-se que a qualquer momento você pode pedir pra parar o jogo levando toda a grana que acumulou.
+                    <br /><br /> Mas, caso erre a questão você levará somente a metade dessa bufunfa.
+                    <br /><br /> Preparado(a)?! Então clique aqui para começar a jogar e ganhar essa bolada!
+                </p>
+            </div>
+            <button id="start" onclick="start()">START</button>
+            <audio src="assets/temaShow.mp3" id="audio"></audio>
+        </div>
+
+
+        <div class="hide" id="game">
+            <div class="game-style">
+                <div class="status">
+                    <div id="pontuacao"></div>
+                    <div class="parar">
+                        <button id="parar" onclick="parar()">parar</button>
+                    </div>
+                    <div class="dica">
+                        <button id="dica" onclick="dica()">dica</button>
+                    </div>
+                </div>
+
+                <div class="game-scope">
+                    <div id="questoes">
+                        <p id="quest"></p>
+                    </div>
+                    <div class="coluna">
+                        <button id="bt0" onclick="nextQuestion(0)"></button>
+                        <button id="bt1" onclick="nextQuestion(1)"></button>
+                        <button id="bt2" onclick="nextQuestion(2)"></button>
+                        <button id="bt3" onclick="nextQuestion(3)"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hide" id="winner">
+            <p id="pontosWinner"></p>
+            <button class="voltar" onclick="zerar()">Voltar</button>
+        </div>
+
+        <div class="hide" id="lose">
+            <p id="pontosLose"></p>
+            <button class="voltar" onclick="zerar()">Voltar</button>
+        </div>
+
+    </main>
+    <script src="js/questoes.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body {
+    background-image: url("cortinas.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game {
+    padding-left: 4em;
+    align-items: center;
+}
+
+.game-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    width: 100vw;
+}
+
+#quest {
+    border: solid 5px white;
+    font-size: 4.5em;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    margin-top: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.coluna {
+    align-items: center;
+    width: 100vw;
+}
+
+#bt0,
+#bt1,
+#bt2,
+#bt3 {
+    width: 100%;
+    border-radius: 4.5em;
+    border: solid 5px white;
+    font-size: 5em;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: .5em;
+    margin-top: 1em;
+}
+
+#start {
+    background-color: blue;
+    height: 150px;
+    width: 500px;
+    border-radius: 45px;
+    box-shadow: 0px 5px 10px 0px black;
+    font-size: 5em;
+    margin: .2em;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 4px solid black;
+    border-radius: 4px;
+    margin: 2em;
+}
+
+img {
+    height: 300px
+}
+
+.intro-title {
+    width: 100%;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 3em;
+}
+
+main {
+    align-items: center;
+}
+
+#dica,
+#parar {
+    border-radius: 4.5em;
+    border: solid 5px white;
+    font-size: 5em;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: .5em;
+    margin-top: 1em;
+}
+
+#pontuacao {
+    font-size: 6em;
+    color: yellow
+}
+
+#questoes {
+    align-items: center;
+}
+
+.game-scope {
+    align-items: center;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.voltar {
+    background-color: blue;
+    height: 150px;
+    width: 400px;
+    border-radius: 45px;
+    box-shadow: 0px 5px 10px 0px black;
+    font-size: 3em;
+    margin: 1.2em
+}
+
+#pontosLose {
+    margin: auto;
+    width: 100%;
+    border: solid 5px white;
+    font-size: 3em;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: .5em;
+    margin-top: 1em;
+}
+
+#pontosWinner {
+    margin: auto;
+    width: 100%;
+    border: solid 5px white;
+    font-size: 3em;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: .5em;
+    margin-top: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+    #start {
+        height: 150px;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #start {
+        height: 50px;
+        width: 150px;
+        font-size: 2.5em;
+    }
+    #bt0,
+    #bt1,
+    #bt2,
+    #bt3 {
+        width: 23.5%;
+        height: 50px;
+        font-size: 2em;
+        padding: .1em;
+        margin-top: 1em;
+    }
+    #quest {
+        font-size: 3em;
+        padding: 1em;
+        margin-top: 1em;
+        width: 90%;
+    }
+    #dica,
+    #parar {
+        font-size: 2em;
+        padding: .5em;
+        margin-top: 1em;
+    }
+    body {
+        background-image: url("cortinas.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
